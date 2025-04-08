@@ -1,0 +1,112 @@
+body {
+    background-color: #ffffff; /* 背景顏色：白色 */
+    text-align: center; /* 文字置中 */
+    font-family: Arial, sans-serif; /* 字體 */
+    margin: 0; /* 移除預設外距 */
+    padding: 0; /* 移除預設內距 */
+    display: flex; /* 使用 Flexbox 排版 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    height: 100vh; /* 高度為視窗高度 */
+}
+
+.container {
+    width: 90%; /* 適應手機螢幕寬度 */
+    max-width: 500px; /* 最大寬度限制 */
+}
+
+#mainImage {
+    width: 100%; /* 圖片寬度自適應容器 */
+    max-width: 200px; /* 最大寬度限制 */
+    transition: all 0.3s ease; /* 添加過渡效果 */
+}
+
+h1 {
+    font-size: 5vw; /* 字體大小根據視口寬度變化 */
+    color: #68495b; /* 字體顏色 */
+    margin: 20px 0; /* 增加上下間距 */
+}
+
+button {
+    font-size: 4vw; /* 字體大小根據視口寬度變化 */
+    padding: 10px 20px; /* 按鈕內距 */
+    border: none; /* 移除邊框 */
+    border-radius: 5px; /* 圓角邊框 */
+    cursor: pointer; /* 滑鼠指標變為手型 */
+    margin: 10px; /* 按鈕間距 */
+    transition: all 0.3s ease; /* 添加過渡效果 */
+}
+
+#yes, #hachiyes, #usagiyes {
+    background-color: #d4818e; /* 背景顏色：粉色 */
+    color: white; /* 文字顏色：白色 */
+}
+
+#no, #hachino, #usagino, #momono {
+    background-color: #6784b1; /* 背景顏色：藍色 */
+    color: white; /* 文字顏色：白色 */
+    position: relative; /* 相對定位 */
+}
+
+.yes-screen {
+    position: fixed; /* 固定定位 */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 寬度為視窗寬度 */
+    height: 100vh; /* 高度為視窗高度 */
+    background-color: #ffffff; /* 背景顏色：白色 */
+    display: flex; /* 使用 Flexbox 排版 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 水平置中 */
+    justify-content: center; /* 垂直置中 */
+}
+
+.yes-text {
+    font-size: 7vw; /* 字體大小根據視口寬度變化 */
+}
+
+.yes-image {
+    width: 50%; /* 圖片寬度自適應容器 */
+    max-width: 300px; /* 最大寬度限制 */
+}
+
+.clicked {
+    background-color: #C0C0C0; /* 按鈕點擊後的背景顏色 */
+}
+
+/* 電腦端樣式優化 */
+@media (min-width: 768px) {
+    body {
+        display: block; /* 使用區塊排版 */
+    }
+
+    .container {
+        position: absolute; /* 絕對定位 */
+        top: 50%; /* 垂直置中 */
+        left: 50%; /* 水平置中 */
+        transform: translate(-50%, -50%); /* 移動至中心點 */
+        width: auto; /* 自動寬度 */
+        max-width: none; /* 移除最大寬度限制 */
+    }
+
+    #mainImage {
+        width: 200px; /* 固定圖片寬度 */
+    }
+
+    h1 {
+        font-size: 28px; /* 固定字體大小 */
+        margin: 20px 0; /* 增加上下間距 */
+    }
+
+    button {
+        font-size: 18px; /* 固定字體大小 */
+    }
+
+    .yes-text {
+        font-size: 36px; /* 固定字體大小 */
+    }
+
+    .yes-image {
+        width: 300px; /* 固定圖片寬度 */
+    }
+}
