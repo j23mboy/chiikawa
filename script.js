@@ -71,9 +71,15 @@ document.getElementById('chiiButton').addEventListener('click', function() {
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜歡你!! ( >᎑<)♡︎ᐝ</h1>
             <img src="images/hug.png" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
         </div>
         `;
         document.body.style.overflow = "hidden";
+
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
     });
 });
 
@@ -133,9 +139,15 @@ document.getElementById('hachiButton').addEventListener('click', function() {
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜歡你!! ( >᎑<)♡︎ᐝ</h1>
             <img src="images/hachihug.jpg" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
         </div>
         `;
         document.body.style.overflow = "hidden";
+
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
     });
 });
 
@@ -161,9 +173,14 @@ document.getElementById('usagiButton').addEventListener('click', function() {
         <div class="yes-screen">
             <h1 class="yes-text">蛤！(才不給你抱)</h1>
             <img src="images/usagifinal.jpg" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
         </div>
         `;
         document.body.style.overflow = "hidden";
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
     });
 
     noButton.addEventListener("click", function() {
@@ -171,9 +188,14 @@ document.getElementById('usagiButton').addEventListener('click', function() {
         <div class="yes-screen">
             <h1 class="yes-text">蛤！(才不給你抱)</h1>
             <img src="images/usagifinal.jpg" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
         </div>
         `;
         document.body.style.overflow = "hidden";
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
     });
 });
 
@@ -226,9 +248,14 @@ document.getElementById('momoButton').addEventListener('click', function() {
             <div class="yes-screen">
                 <h1 class="yes-text">不抱就不抱！(ﾒ ﾟ皿ﾟ)ﾒ</h1>
                 <img src="images/momo06.png" alt="擁抱" class="yes-image">
+                <button id="refreshButton" class="refresh-button">重整</button>
             </div>
             `;
             document.body.style.overflow = "hidden";
+            // 為重整按鈕綁定事件
+            document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+            });
         }
     });
 });
@@ -269,7 +296,13 @@ yesButton.addEventListener("click", function() {
     <div class="yes-screen">
         <h1 class="yes-text">!!!喜歡你!! ( >᎑<)♡︎ᐝ</h1>
         <img src="images/hug.png" alt="擁抱" class="yes-image">
+        <button id="refreshButton" class="refresh-button">重整</button>
     </div>
     `;
     document.body.style.overflow = "hidden";
+
+    // 為重整按鈕綁定事件
+    document.getElementById("refreshButton").addEventListener("click", function() {
+        location.reload(); // 重整頁面
+    });
 });
