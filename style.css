@@ -15,7 +15,7 @@ body {
     max-width: 500px; /* 最大寬度限制 */
 }
 
-#mainImage {
+#mainImage, #hachiImage, #usagiImage, #momoImage, #rakkoImage, #shisaImage, #kuriImage {
     width: 100%; /* 圖片寬度自適應容器 */
     max-width: 200px; /* 最大寬度限制 */
     transition: all 0.3s ease; /* 添加過渡效果 */
@@ -37,12 +37,12 @@ button {
     transition: all 0.3s ease; /* 添加過渡效果 */
 }
 
-#yes, #hachiyes, #usagiyes {
+#yes, #hachiyes, #usagiyes, #rakkoyes, #shisayes, #kuriyes {
     background-color: #d4818e; /* 背景顏色：粉色 */
     color: white; /* 文字顏色：白色 */
 }
 
-#no, #hachino, #usagino, #momono {
+#no, #hachino, #usagino, #momono, #rakkono, #shisano, #kurino {
     background-color: #6784b1; /* 背景顏色：藍色 */
     color: white; /* 文字顏色：白色 */
     position: relative; /* 相對定位 */

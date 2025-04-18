@@ -20,11 +20,17 @@ document.getElementById('chiiButton').addEventListener('click', function() {
     document.getElementById('hachicontainer').style.display = 'none';
     document.getElementById('usagicontainer').style.display = 'none';
     document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'none';
 
     this.style.backgroundColor = '#C0C0C0'; // 改變 chiiButton 顏色
     document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
     document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
     document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
 
     // 切換到 chicontainer 時，yesButton 指向 "yes"
     yesButton = document.getElementById("yes");
@@ -89,11 +95,17 @@ document.getElementById('hachiButton').addEventListener('click', function() {
     document.getElementById('hachicontainer').style.display = 'block';
     document.getElementById('usagicontainer').style.display = 'none';
     document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'none';
 
     this.style.backgroundColor = '#C0C0C0'; // 改變 hachiButton 顏色
     document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
     document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
     document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
 
     // 切換到 hachicontainer 時，更新按鈕指向
     yesButton = document.getElementById("hachiyes");
@@ -157,11 +169,17 @@ document.getElementById('usagiButton').addEventListener('click', function() {
     document.getElementById('hachicontainer').style.display = 'none';
     document.getElementById('usagicontainer').style.display = 'block';
     document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'none';
 
     this.style.backgroundColor = '#C0C0C0'; // 改變 usagiButton 顏色
     document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
     document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
     document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
 
     yesButton = document.getElementById("usagiyes");
     noButton = document.getElementById("usagino");
@@ -204,11 +222,17 @@ document.getElementById('momoButton').addEventListener('click', function() {
     document.getElementById('hachicontainer').style.display = 'none';
     document.getElementById('usagicontainer').style.display = 'none';
     document.getElementById('momocontainer').style.display = 'block';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'none';
 
     this.style.backgroundColor = '#C0C0C0'; // 改變 momoButton 顏色
     document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
     document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
     document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
 
     noButton = document.getElementById("momono");
     mainImage = document.getElementById("momoImage");
@@ -257,6 +281,215 @@ document.getElementById('momoButton').addEventListener('click', function() {
             location.reload(); // 重整頁面
             });
         }
+    });
+});
+
+document.getElementById('rakkoButton').addEventListener('click', function() {
+    document.getElementById('chicontainer').style.display = 'none';
+    document.getElementById('hachicontainer').style.display = 'none';
+    document.getElementById('usagicontainer').style.display = 'none';
+    document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'block';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'none';
+
+    this.style.backgroundColor = '#C0C0C0'; // 改變 momoButton 顏色
+    document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
+    document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
+    document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
+    document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
+
+    // 切換到 rakkocontainer 時，更新按鈕指向
+    yesButton = document.getElementById("rakkoyes");
+    noButton = document.getElementById("rakkono");
+    mainImage = document.getElementById("rakkoImage");
+    questionText = document.getElementById("rakkoQuestion");
+
+    clickCount = 0; // 重置點擊次數
+    questionText.innerText = "可以給我甜點嗎？"; // 重置問題文字
+
+    noButton.addEventListener("click", function() {
+        clickCount++;
+        // 讓 Yes 按鈕變大，每次放大 2 倍
+        let yesSize = 1 + (clickCount * 1.2);
+        yesButton.style.transform = `scale(${yesSize})`;
+
+        // 擠壓 No 按鈕，每次右移 50px
+        let noOffset = clickCount * 50;
+        noButton.style.transform = `translateX(${noOffset}px)`;
+
+        // 讓圖片和文字往上移動
+        let moveUp = clickCount * 25; // 每次上移 25px
+        mainImage.style.transform = `translateY(-${moveUp}px)`;
+        questionText.style.transform = `translateY(-${moveUp}px)`;
+
+        // No 按鈕文字變化（前 5 次變化）
+        if (clickCount <= 5) {
+            noButton.innerText = noTexts[clickCount - 1];
+        }
+
+        // 圖片變化（前 5 次變化）
+        if (clickCount === 1) mainImage.src = "images/rakko02.jpg"; 
+        if (clickCount === 2) mainImage.src = "images/rakko03.png"; 
+        if (clickCount === 3) mainImage.src = "images/rakko04.png";   
+        if (clickCount === 4) mainImage.src = "images/rakko05.jpg";
+        if (clickCount >= 5) mainImage.src = "images/rakko06.jpg";  
+    });
+
+    yesButton.addEventListener("click", function() {
+        document.body.innerHTML = `
+        <div class="yes-screen">
+            <h1 class="yes-text">好好吃~~~(✪ω✪)</h1>
+            <img src="images/rakkohappy.jpg" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
+        </div>
+        `;
+        document.body.style.overflow = "hidden";
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
+    });
+});
+
+document.getElementById('shisaButton').addEventListener('click', function() {
+    document.getElementById('chicontainer').style.display = 'none';
+    document.getElementById('hachicontainer').style.display = 'none';
+    document.getElementById('usagicontainer').style.display = 'none';
+    document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'block';
+    document.getElementById('kuricontainer').style.display = 'none';
+
+    this.style.backgroundColor = '#C0C0C0'; // 改變 momoButton 顏色
+    document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
+    document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
+    document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
+    document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('kuriButton').style.backgroundColor = ''; // 恢復 kuriButton 原顏色
+
+    // 切換到 shisacontainer 時，更新按鈕指向
+    yesButton = document.getElementById("shisayes");
+    noButton = document.getElementById("shisano");
+    mainImage = document.getElementById("shisaImage");
+    questionText = document.getElementById("shisaQuestion");
+
+    clickCount = 0; // 重置點擊次數
+    questionText.innerText = "可以讓我在這裡打工嗎？"; // 重置問題文字
+
+    noButton.addEventListener("click", function() {
+        clickCount++;
+        // 讓 Yes 按鈕變大，每次放大 2 倍
+        let yesSize = 1 + (clickCount * 1.2);
+        yesButton.style.transform = `scale(${yesSize})`;
+
+        // 擠壓 No 按鈕，每次右移 50px
+        let noOffset = clickCount * 50;
+        noButton.style.transform = `translateX(${noOffset}px)`;
+
+        // 讓圖片和文字往上移動
+        let moveUp = clickCount * 25; // 每次上移 25px
+        mainImage.style.transform = `translateY(-${moveUp}px)`;
+        questionText.style.transform = `translateY(-${moveUp}px)`;
+
+        // No 按鈕文字變化（前 5 次變化）
+        if (clickCount <= 5) {
+            noButton.innerText = noTexts[clickCount - 1];
+        }
+
+        // 圖片變化（前 5 次變化）
+        if (clickCount === 1) mainImage.src = "images/shisa02.jpg"; 
+        if (clickCount === 2) mainImage.src = "images/shisa03.png"; 
+        if (clickCount === 3) mainImage.src = "images/shisa04.jpg";   
+        if (clickCount === 4) mainImage.src = "images/shisa05.png";
+        if (clickCount >= 5) mainImage.src = "images/shisa06.jpg";  
+    });
+
+    yesButton.addEventListener("click", function() {
+        document.body.innerHTML = `
+        <div class="yes-screen">
+            <h1 class="yes-text">獅在好開心~~٩(๑•̀ω•́๑)۶</h1>
+            <img src="images/shisahappy.jpg" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
+        </div>
+        `;
+        document.body.style.overflow = "hidden";
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
+    });
+});
+
+document.getElementById('kuriButton').addEventListener('click', function() {
+    document.getElementById('chicontainer').style.display = 'none';
+    document.getElementById('hachicontainer').style.display = 'none';
+    document.getElementById('usagicontainer').style.display = 'none';
+    document.getElementById('momocontainer').style.display = 'none';
+    document.getElementById('rakkocontainer').style.display = 'none';
+    document.getElementById('shisacontainer').style.display = 'none';
+    document.getElementById('kuricontainer').style.display = 'block';
+
+    this.style.backgroundColor = '#C0C0C0'; // 改變 kuriButton 顏色
+    document.getElementById('chiiButton').style.backgroundColor = ''; // 恢復 chiiButton 原顏色
+    document.getElementById('hachiButton').style.backgroundColor = ''; // 恢復 hachiButton 原顏色
+    document.getElementById('usagiButton').style.backgroundColor = ''; // 恢復 usagiButton 原顏色
+    document.getElementById('momoButton').style.backgroundColor = ''; // 恢復 momoButton 原顏色
+    document.getElementById('rakkoButton').style.backgroundColor = ''; // 恢復 rakkoButton 原顏色
+    document.getElementById('shisaButton').style.backgroundColor = ''; // 恢復 shisaButton 原顏色
+
+    // 切換到 kuricontainer 時，更新按鈕指向
+    yesButton = document.getElementById("kuriyes");
+    noButton = document.getElementById("kurino");
+    mainImage = document.getElementById("kuriImage");
+    questionText = document.getElementById("kuriQuestion");
+
+    clickCount = 0; // 重置點擊次數
+    questionText.innerText = "可以喝酒嗎？"; // 重置問題文字
+
+    noButton.addEventListener("click", function() {
+        clickCount++;
+        // 讓 Yes 按鈕變大，每次放大 2 倍
+        let yesSize = 1 + (clickCount * 1.2);
+        yesButton.style.transform = `scale(${yesSize})`;
+
+        // 擠壓 No 按鈕，每次右移 50px
+        let noOffset = clickCount * 50;
+        noButton.style.transform = `translateX(${noOffset}px)`;
+
+        // 讓圖片和文字往上移動
+        let moveUp = clickCount * 25; // 每次上移 25px
+        mainImage.style.transform = `translateY(-${moveUp}px)`;
+        questionText.style.transform = `translateY(-${moveUp}px)`;
+
+        // No 按鈕文字變化（前 5 次變化）
+        if (clickCount <= 5) {
+            noButton.innerText = noTexts[clickCount - 1];
+        }
+
+        // 圖片變化（前 5 次變化）
+        if (clickCount === 1) mainImage.src = "images/kuri02.png"; 
+        if (clickCount === 2) mainImage.src = "images/kuri03.png"; 
+        if (clickCount === 3) mainImage.src = "images/kuri04.jpg";   
+        if (clickCount === 4) mainImage.src = "images/kuri05.png";
+        if (clickCount >= 5) mainImage.src = "images/kuri06.png";  
+    });
+    yesButton.addEventListener("click", function() {
+        document.body.innerHTML = `
+        <div class="yes-screen">
+            <h1 class="yes-text">哈~~~~~</h1>
+            <img src="images/kurihappy.png" alt="擁抱" class="yes-image">
+            <button id="refreshButton" class="refresh-button">重整</button>
+        </div>
+        `;
+        document.body.style.overflow = "hidden";
+        // 為重整按鈕綁定事件
+        document.getElementById("refreshButton").addEventListener("click", function() {
+            location.reload(); // 重整頁面
+        });
     });
 });
 
