@@ -244,17 +244,17 @@ document.getElementById('momoButton').addEventListener('click', function() {
     noButton.addEventListener("click", function() {
         clickCount++;
         // 讓 Yes 按鈕變大，每次放大 2 倍
-        let yesSize = 1 + (clickCount * 1.2);
-        yesButton.style.transform = `scale(${yesSize})`;
+        // let yesSize = 1 + (clickCount * 1.2);
+        // yesButton.style.transform = `scale(${yesSize})`;
 
         // 擠壓 No 按鈕，每次右移 50px
-        let noOffset = clickCount * 50;
-        noButton.style.transform = `translateX(${noOffset}px)`;
+        // let noOffset = clickCount * 50;
+        // noButton.style.transform = `translateX(${noOffset}px)`;
 
         // 讓圖片和文字往上移動
-        let moveUp = clickCount * 25; // 每次上移 25px
-        mainImage.style.transform = `translateY(-${moveUp}px)`;
-        questionText.style.transform = `translateY(-${moveUp}px)`;
+        // let moveUp = clickCount * 25; // 每次上移 25px
+        // mainImage.style.transform = `translateY(-${moveUp}px)`;
+        // questionText.style.transform = `translateY(-${moveUp}px)`;
 
         // No 按鈕文字變化（前 5 次變化）
         if (clickCount < 5) {
@@ -263,9 +263,9 @@ document.getElementById('momoButton').addEventListener('click', function() {
 
         // 圖片變化（前 5 次變化）
         if (clickCount === 1) mainImage.src = "images/momo02.png"; // 驚訝
-        if (clickCount === 2) mainImage.src = "images/momo03.png";   // 思考
-        if (clickCount === 3) mainImage.src = "images/momo04.png";   // 生氣
-        if (clickCount === 4) mainImage.src = "images/momo05.png";  // 哭泣
+        if (clickCount === 2) mainImage.src = "images/momo03.png"; // 思考
+        if (clickCount === 3) mainImage.src = "images/momo04.png"; // 生氣
+        if (clickCount === 4) mainImage.src = "images/momo05.png"; // 哭泣
         
         if (clickCount >= 5) {
             document.body.innerHTML = `
